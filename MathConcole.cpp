@@ -87,14 +87,14 @@ static void nativeCompute()
 			outputs[j] = result;
 		}
 
-		if (!(i % 100000))
-		{
-			MSG msg;
-			while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-			{    /* Loop of message-processing: */
-				::DispatchMessage(&msg);
-			}
-		}
+		//if (!(i % 100000))
+		//{
+		//	MSG msg;
+		//	while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		//	{    /* Loop of message-processing: */
+		//		::DispatchMessage(&msg);
+		//	}
+		//}
 	}
 	watch.Stop();
 	long double dur = watch.GetDuration();
@@ -129,14 +129,14 @@ static void nativeComputeDbl() // Floating Point
 			resultDbl += 1.555;
 			outpDbl[j] = resultDbl;
 		}
-		if (!(i % 100000))
-		{
-			MSG msg;
-			while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-			{    /* Loop of message-processing: */
-				::DispatchMessage(&msg);
-			}
-		}
+		//if (!(i % 100000))
+		//{
+		//	MSG msg;
+		//	while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		//	{    /* Loop of message-processing: */
+		//		::DispatchMessage(&msg);
+		//	}
+		//}
 	}
 	watch.Stop();
 	long double dur = watch.GetDuration();
@@ -161,14 +161,14 @@ static void nativeComputeTrg() // Trigonometry
 			outpDbl[j] = resultDbl;
 		}
 
-		if (!(i % 100000))
-		{			
-			MSG msg;
-			while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-			{    /* Loop of message-processing: */
-				::DispatchMessage(&msg);
-			}
-		}
+		//if (!(i % 100000))
+		//{			
+		//	MSG msg;
+		//	while (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		//	{    /* Loop of message-processing: */
+		//		::DispatchMessage(&msg);
+		//	}
+		//}
 	}
 	watch.Stop();
 	long double dur = watch.GetDuration();
